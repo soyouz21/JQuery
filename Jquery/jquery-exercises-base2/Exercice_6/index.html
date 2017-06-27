@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-2.2.4.js"></script>
+  <title>Exercice 6</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="texte">
+  <p>Tara, originellement nommée Antarctica puis Seamaster, est une goélette française destinée à la fois à l'exploration et à la défense de l'environnement. Dans le cadre de l'Année polaire internationale, en 2007-2008, ce voilier est utilisé en Arctique par l'expédition Tara Arctic dans le but de faire des relevés permettant de mieux comprendre les changements climatiques qui s'opèrent en Arctique. En 2009, dans le cadre de l'expédition Tara Oceans, Tara parcourt les mers et les océans dans une circumnavigation de trois ans afin d'étudier le piégeage des molécules de gaz carbonique (CO2) par les micro-organismes marins comme le plancton. En avril 2016, une nouvelle expédition est montée Tara Pacific dont l'objectif est de comprendre le corail, menacé par des facteurs humains et climatiques1.</p>
+  </div>
+  <div>
+  <div class="color green" id="green"></div>
+  <div class="color red" id="red"></div>
+  <div class="color blue" id="blue"></div>
+</div>
+<script>
+    
+   /* $(".color").mouseover(function(){
+        if ($(this).attr("id") =="green"){//l id de la div
+             $("#texte").css("color","green");
+            
+            } }*///ici methode de thomas avec l attr "id" qui est strictement egal à vert.
+    //on fait appel a la classe color car toutes les classes sont en des "color" 
+    
+    
+    $("#green").mouseover(function(){//quand ma souris va passer sur le vert alors je fais ce qui suit
+        $("#texte").css("color","green") //texte en vert    
+    });
+    $("#red").mouseover(function(){//quand ma souris va passer sur le vert alors je fais ce qui suit
+        $("#texte").css("color","red") //texte en rouge    
+    });
+    $("#blue").mouseover(function(){//quand ma souris va passer sur le vert alors je fais ce qui suit
+        $("#texte").css("color","blue") //texte en bleue    
+    });
+    
+       $(".color").mouseout(function(){//quand ma souris va sortir du vert alors je fais ce qui suit
+            $("#texte").css("color","black"); }); 
+    
+                                  
+
+</script>
+</body>
+</html>

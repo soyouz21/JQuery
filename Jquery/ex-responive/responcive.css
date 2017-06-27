@@ -1,0 +1,15 @@
+@media screen and (max-width: 600px){
+
+/* propriétés pour mobile */
+    body{
+    background-color: red;
+}
+
+}
+
+
+
+#bloc_page{
+    width:100%;
+
+}
